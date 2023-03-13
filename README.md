@@ -7,6 +7,8 @@
 
 # Ordinal Skulls
 
+🪙💀🏺
+
 ## Overview
 
 Ordinal Skulls is a collection of high-quality collectible artifacts built on the Bitcoin network using the [Ordinals protocol](https://ordinals.com/). This website allows users to mint their own Ordinal Skull NFTs and become part of this unique and valuable collection.
