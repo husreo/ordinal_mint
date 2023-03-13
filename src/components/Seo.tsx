@@ -5,11 +5,10 @@ const defaultMeta = {
   title: 'Ordinal Skulls',
   siteName: 'Ordinal Skulls',
   description: 'Ordinal Skulls Official Mint-page',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: '',
+  url: 'https://ordinal-skulls.vercel.app',
   type: 'website',
   robots: 'follow, index',
-  image: '',
+  image: 'https://ordinal-skulls.vercel.app/images/large-og.png',
 };
 
 type SeoProps = {
