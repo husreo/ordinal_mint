@@ -9,7 +9,7 @@ export default function market() {
   return (
     <Layout href='/market'>
       {/* <Seo templateTitle='Home' /> url(#noiseFilter) */}
-      <Seo />
+      <Seo templateTitle='Marketplace' />
 
       <main className='layout min-h-screen'>
         <section className='relative flex flex-col gap-20 pt-28'>
