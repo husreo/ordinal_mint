@@ -27,6 +27,14 @@
     src: url('/fonts/unburied.ttf') format('opentype');
   }
 
+  @font-face {
+    font-family: 'Chillpixels';
+    font-style: normal;
+    font-weight: 500;
+    font-display: optional;
+    src: url('/fonts/chillpixels.ttf') format('opentype');
+  }
+
   /* #region  /**=========== Typography =========== */
   .h0 {
     @apply font-primary text-3xl font-bold md:text-5xl;
@@ -34,17 +42,18 @@
 
   h1,
   .h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+    @apply bg-gradient-to-br from-yellow to-orange bg-clip-text font-display text-[10rem] leading-none text-transparent;
+    text-shadow: rgba(255, 183, 0, 0.22) 0px 0px 85px;
   }
 
   h2,
   .h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+    @apply font-display text-4xl font-bold md:text-6xl;
   }
 
   h3,
   .h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+    @apply font-accent text-2xl;
   }
 
   h4,
@@ -53,19 +62,32 @@
   }
 
   body,
+  p,
   .p {
-    @apply font-primary text-sm md:text-base;
+    @apply font-primary text-lg text-white md:text-lg;
+  }
+
+  html,
+  body {
+    @apply bg-dark;
   }
   /* #endregion  /**======== Typography =========== */
 
   .layout {
     /* 1100px */
-    max-width: 68.75rem;
+    max-width: 56.75rem;
     @apply mx-auto w-11/12;
   }
 
   /* Class to adjust with sticky footer */
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
+  }
+
+  .noisy-background {
+    background: url('https://www.transparenttextures.com/patterns/noisy-net.png')
+      0 0;
+    opacity: 0.5;
+    /* add any other properties you need */
   }
 }

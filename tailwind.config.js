@@ -10,6 +10,7 @@ module.exports = {
         primary: ['Pixer', ...fontFamily.sans],
         accent: ['Techpixs', ...fontFamily.sans],
         display: ['Unburied', ...fontFamily.sans],
+        matrix: ['Chillpixels', ...fontFamily.sans],
       },
       colors: {
         dark: '#070007',

@@ -1,30 +1,34 @@
 import Link from 'next/link';
 import * as React from 'react';
 
+import clsxm from '@/lib/clsxm';
+
 const links = [
-  { href: '/', label: 'Route 1' },
-  { href: '/', label: 'Route 2' },
+  { href: '/', label: 'Home' },
+  { href: '/market', label: 'Marketplace' },
+  { href: '/faq', label: 'FAQ' },
 ];
 
-export default function Header() {
+export default function Header({ hhref }: { hhref?: string }) {
   return (
-    <header className='sticky top-0 z-50 bg-white'>
-      <div className='layout flex h-14 items-center justify-between'>
-        <Link href='/' className='font-bold hover:text-gray-600'>
-          Home
-        </Link>
-        <nav>
-          <ul className='flex items-center justify-between space-x-4'>
-            {links.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <Link href={href} className='hover:text-gray-600'>
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+    <header className='absolute top-0 z-50 w-full p-3'>
+      <nav className='layout'>
+        <ul className='flex items-center justify-between space-x-4 px-16'>
+          {links.map(({ href, label }) => (
+            <li key={`${href}${label}`}>
+              <Link
+                href={href}
+                className={clsxm(
+                  'font-accent text-xl text-white/80 hover:text-white',
+                  hhref == href && 'text-white'
+                )}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }
