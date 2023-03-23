@@ -9,9 +9,11 @@ import Noise from '~/images/noise.png';
 export default function Layout({
   children,
   href,
+  showHeader = true,
 }: {
   children: React.ReactNode;
   href?: string;
+  showHeader?: boolean;
 }) {
   // Put Header or Footer Here
 
@@ -24,9 +26,9 @@ export default function Layout({
         src={Noise}
         alt='noise'
       />
-      <Header hhref={href} />
-      <div className='purple-back -z-20'></div>
-      <div className='blue-back-1 -z-20'></div>
+      {showHeader && <Header hhref={href} />}
+      <div className='purple-back -z-20 hidden md:block'></div>
+      <div className='blue-back-1 -z-20 hidden md:block'></div>
       {children}
       <Footer />
     </>
