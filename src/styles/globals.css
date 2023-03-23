@@ -118,6 +118,16 @@
     @apply flex-1;
   }
 
+  html::after {
+    content: '';
+    @apply absolute right-[50px] top-[380px] -z-20 aspect-square w-[150px] bg-[#00D1FF10] blur-[200px] md:w-[400px] md:blur-[900px];
+  }
+
+  html::before {
+    content: '';
+    @apply absolute top-[450px] left-[20px] -z-20 aspect-square w-[200px] bg-[#00D1FF10] blur-[200px] md:w-[700px] md:blur-[900px];
+  }
+
   #__next {
     @apply flex flex-col;
     width: 100%;

@@ -82,7 +82,7 @@ export default function MintPage() {
       <Seo templateTitle='Mint' />
 
       <main className='layout min-h-screen bg-opacity-0'>
-        <section className='relative flex flex-col items-center gap-7 md:gap-12 md:pt-32'>
+        <section className='relative mb-10 flex flex-col items-center gap-7 md:gap-12 md:pt-32'>
           {!isValid ? (
             <div className='flex flex-col gap-3 p-2'>
               <Link href='/'>
