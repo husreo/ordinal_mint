@@ -19,7 +19,7 @@ export default function Header({ hhref }: { hhref?: string }) {
               <Link
                 href={href}
                 className={clsxm(
-                  'font-accent text-xl text-white/80 hover:text-white',
+                  'px-3 py-1 font-accent text-xl text-white/80 hover:text-white',
                   hhref == href && 'text-white'
                 )}
               >
