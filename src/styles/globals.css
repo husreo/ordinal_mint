@@ -97,7 +97,7 @@
   }
 
   .purple-back {
-    @apply absolute left-1/2 top-0 aspect-square w-[482px] -translate-x-1/2 bg-[#FF00C760] blur-[247px];
+    @apply absolute left-1/2 top-0 aspect-square w-[300px] -translate-x-1/2 bg-[#FF00C760] blur-[247px]  md:w-[482px] md:blur-[247px];
   }
 
   .blue-back-1 {
@@ -112,11 +112,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-  }
-
-  html::before {
-    content: '';
-    @apply absolute top-[550px] left-[20px] aspect-square w-[700px] bg-[#00D1FF10] blur-[900px];
   }
 
   main {

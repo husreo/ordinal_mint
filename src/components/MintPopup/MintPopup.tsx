@@ -154,8 +154,8 @@ const MintPopup = () => {
                   BTC
                 </span>
               </div>
-              <Button className='mt-6' onClick={checkValid}>
-                Mint
+              <Button disabled className='mt-6' onClick={checkValid}>
+                Mint soon
               </Button>
             </>
           ) : (

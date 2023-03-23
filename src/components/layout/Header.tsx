@@ -13,7 +13,7 @@ export default function Header({ hhref }: { hhref?: string }) {
   return (
     <header className='absolute top-0 z-50 w-full p-3'>
       <nav className='layout'>
-        <ul className='flex items-center justify-between space-x-4 md:px-16'>
+        <ul className='flex items-center justify-between md:space-x-4 md:px-16'>
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <Link
