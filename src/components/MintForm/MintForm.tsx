@@ -118,14 +118,18 @@ export default function MintForm() {
             <label htmlFor='price' className='font-accent text-xl'>
               Total price
             </label>
-            <span>
-              <span className='text-2xl'>{amount * mintPrice}</span> BTC +{' '}
-              <span className='text-2xl'>{amount * fee}</span> BTC fee ={' '}
-              <span className='text-2xl font-bold'>
-                {amount * mintPrice + amount * fee}
-              </span>{' '}
-              BTC
-            </span>
+            {mintStatus == 0 ? (
+              'TBA'
+            ) : (
+              <span>
+                <span className='text-2xl'>{amount * mintPrice}</span> BTC +{' '}
+                <span className='text-2xl'>{amount * fee}</span> BTC fee ={' '}
+                <span className='text-2xl font-bold'>
+                  {amount * mintPrice + amount * fee}
+                </span>{' '}
+                BTC
+              </span>
+            )}
           </div>
           <Button className='mt-6' onClick={checkValid}>
             {mintStatus == 0 && 'Mint soon'}

@@ -11,6 +11,9 @@ import Seo from '@/components/Seo';
 
 import Skull from '~/images/skull.jpg';
 
+const mintStatus = (process.env.NEXT_PUBLIC_MINT_STATUS ?? 0) as number;
+const supply = (process.env.NEXT_PUBLIC_SUPPLY ?? 0) as number;
+
 export default function HomePage() {
   return (
     <Layout href='/'>
@@ -28,11 +31,17 @@ export default function HomePage() {
           </p>
           <div className='hidden flex-col items-center justify-center gap-3 md:flex'>
             <MintPopup />
+            {mintStatus !== 0 && (
+              <span className='font-matrix'>0/{supply}</span>
+            )}
           </div>
           <div className='flex flex-col items-center justify-center gap-3 md:hidden'>
             <Link href='/mint'>
               <Button className='px-32'>Mint</Button>
             </Link>
+            {mintStatus !== 0 && (
+              <span className='font-matrix'>0/{supply}</span>
+            )}
           </div>
         </section>
         <section className='py-24'>
