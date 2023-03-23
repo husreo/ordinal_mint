@@ -27,8 +27,7 @@ export default function Layout({
         alt='noise'
       />
       {showHeader && <Header hhref={href} />}
-      <div className='purple-back -z-20 '></div>
-      <div className='blue-back-1 -z-20 '></div>
+      <div className='purple-back -z-20'></div>
       {children}
       <Footer />
     </>
