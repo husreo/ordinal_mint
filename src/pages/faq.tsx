@@ -110,14 +110,22 @@ export default function FaqPage() {
                   className='border-b border-b-white'
                 >
                   OrdSwap
-                </Link>{' '}
-                and{' '}
+                </Link>
+                ,{' '}
                 <Link
                   target='_blank'
                   href='https://ordinalswallet.com/'
                   className='border-b border-b-white'
                 >
                   OrdinalsWallet
+                </Link>{' '}
+                and{' '}
+                <Link
+                  target='_blank'
+                  href='https://magiceden.io/ordinals'
+                  className='border-b border-b-white'
+                >
+                  Magic Eden
                 </Link>
               </p>
             </div>
