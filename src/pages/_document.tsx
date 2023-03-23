@@ -6,9 +6,26 @@ export default function Document() {
       <Head>
         <link
           rel='preload'
-          href='/fonts/inter-var-latin.woff2'
+          href='/fonts/chillpixels.ttf'
           as='font'
-          type='font/woff2'
+          crossOrigin='anonymous'
+        />
+        <link
+          rel='preload'
+          href='/fonts/pixer.ttf'
+          as='font'
+          crossOrigin='anonymous'
+        />
+        <link
+          rel='preload'
+          href='/fonts/techpixs.ttf'
+          as='font'
+          crossOrigin='anonymous'
+        />
+        <link
+          rel='preload'
+          href='/fonts/unburied.ttf'
+          as='font'
           crossOrigin='anonymous'
         />
       </Head>
