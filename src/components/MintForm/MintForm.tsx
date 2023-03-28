@@ -131,7 +131,11 @@ export default function MintForm() {
               </span>
             )}
           </div>
-          <Button className='mt-6' onClick={checkValid}>
+          <Button
+            className='mt-6'
+            disabled={mintStatus == 0}
+            onClick={checkValid}
+          >
             {mintStatus == 0 && 'Mint soon'}
             {mintStatus == 1 && 'Whitelist mint'}
             {mintStatus == 2 && 'Mint'}
