@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -8,8 +7,6 @@ import Button from '@/components/Button/Button';
 import Layout from '@/components/layout/Layout';
 import MintPopup from '@/components/MintPopup/MintPopup';
 import Seo from '@/components/Seo';
-
-import Skull from '~/images/skull.jpg';
 
 const mintStatus = (process.env.NEXT_PUBLIC_MINT_STATUS ?? 0) as number;
 const supply = (process.env.NEXT_PUBLIC_SUPPLY ?? 0) as number;
@@ -42,24 +39,6 @@ export default function HomePage() {
             {mintStatus !== 0 && (
               <span className='font-matrix'>0/{supply}</span>
             )}
-          </div>
-        </section>
-        <section className='py-24'>
-          <div className='flex flex-row gap-6'>
-            <div>
-              <Image className='rounded-2xl' src={Skull} alt='Skull' />
-            </div>
-            <div className='flex-grow p-3'>
-              <h3 className='mb-5'>
-                OrdSkulls NFT on the Ordinals Protocol $200,000 PRIZE
-              </h3>
-              <p>
-                Nam tincidunt ultricies urna, in molestie dolor euismod vel.
-                Cras id odio placerat, ultricies erat in, condimentum felis.
-                Phasellus condimentum, nibh sit amet malesuada faucibus, risus
-                est tempor tortor, id placerat tortor ipsum vel diam.
-              </p>
-            </div>
           </div>
         </section>
       </main>
