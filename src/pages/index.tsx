@@ -28,17 +28,13 @@ export default function HomePage() {
           </p>
           <div className='hidden flex-col items-center justify-center gap-3 md:flex'>
             <MintPopup />
-            {mintStatus !== 0 && (
-              <span className='font-matrix'>0/{supply}</span>
-            )}
+            {mintStatus != 0 && <span className='font-matrix'>0/{supply}</span>}
           </div>
           <div className='flex flex-col items-center justify-center gap-3 md:hidden'>
             <Link href='/mint'>
               <Button className='px-32'>Mint</Button>
             </Link>
-            {mintStatus !== 0 && (
-              <span className='font-matrix'>0/{supply}</span>
-            )}
+            {mintStatus != 0 && <span className='font-matrix'>0/{supply}</span>}
           </div>
         </section>
       </main>
